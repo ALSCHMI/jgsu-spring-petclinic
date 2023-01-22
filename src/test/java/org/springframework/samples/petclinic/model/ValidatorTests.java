@@ -44,8 +44,7 @@ class ValidatorTests {
 	void shouldNotValidateWhenFirstNameEmpty() {
 
 		LocaleContextHolder.setLocale(Locale.ENGLISH);
-		Person person = new Person();
-		//broke the test here with intent
+		Person person = new Person(); 
 		person.setFirstName("notempty");
 		person.setLastName("smith");
 
