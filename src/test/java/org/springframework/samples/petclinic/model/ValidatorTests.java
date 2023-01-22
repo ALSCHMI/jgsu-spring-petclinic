@@ -44,8 +44,8 @@ class ValidatorTests {
 	void shouldNotValidateWhenFirstNameEmpty() {
 
 		LocaleContextHolder.setLocale(Locale.ENGLISH);
-		Person person = new Person(); 
-		person.setFirstName("notempty");
+		Person person = new Person();
+		person.setFirstName("");
 		person.setLastName("smith");
 
 		Validator validator = createValidator();
